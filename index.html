@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+<!-- img src= "http" -->
+  </title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  
+  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+<!--   <form id="newContact">
+<input type="text" id="name" placeholder="name"><br>
+<input type="text" id="phone" placeholder="phone"><br>
+<input type="text" id="email" placeholder="email"><br>
+<input type="text" id="imgUrl" placeholder="paste image url"><br>
+<button>Add Contact</button>
+</form>
+ -->
+ <form id="newContact">
+  <h2>Your contact information </h2>
+   
+   <p>Name<span >*</span><br />
+      <input type="text" id="contact_name" name="name" size="50" /></p>
+
+   <p>Telephone<span >*</span>
+
+          <input type="text" id="contact_phone"  >
+    <p>E-mail address<span >*</span><br />
+          <input type="text" id="contact_email" name="email" size="50" value="Enter your email address" onclick="if(this.value=='Enter your email address') this.value='';" /></p>
+    <p>Profile Picture<span >*</span><br />
+          <input type="img" id="contact_image_url" name="img_url" maxwidth="40" maxheight="40";  /></p>
+          <button name="submit">Create Contact</button>
+
+</form>
+
+<ul id="contacts">
+</ul>
+</body>
+</html>
